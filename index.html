@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/6869ddc5f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="Doc_header">
+        <a id="My_header">My project</a>
+        <div class="socials">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+            <a href="https://www.reddit.com/" target="_blank"><i class="fa-brands fa-square-reddit"></i></a>
+            <a href="https://x.com/?lang=en" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul id="nav_elements">
+            <li></li>
+            <li></li>
+            <a href="/index.html"><li class="nav_element" >Home</li></a>
+            <li class="nav_element">About</li>
+            <li class="nav_element">Community</li>
+            <li class="nav_element">Accessibility</li>
+            <li class="nav_element">Help</li>
+        </ul>
+    </nav>
+    <main class="main_content">
+        <div id="Slider_container">
+            <div class="slide_image fade"><img src="images/dragon dude.webp"></div>
+            <div class="slide_image fade"><img src="images/dragon v kratos.webp"></div>
+            <div class="slide_image fade"><img src="images/fire & ice.webp"></div>
+            <div class="slide_image fade"><img src="images/gow beast.webp"></div>
+            <div class="slide_image fade"><img src="images/gow dr.webp"></div>
+
+            <a class="prev" onclick="Slide_mover(-1)">&#10096</a>
+            <a class="next" onclick="Slide_mover(1)">&#10097</a>
+        </div>
+    </main>
+    <aside class="list_of_images">
+        <img class="dot" onclick="Current_slide(1)" src="/images/dragon dude.webp">
+        <img class="dot" onclick="Current_slide(2)" src="/images/dragon v kratos.webp">
+        <img class="dot" onclick="Current_slide(3)" src="/images/fire & ice.webp">
+        <img class="dot" onclick="Current_slide(4)" src="/images/gow beast.webp">
+        <img class="dot" onclick="Current_slide(5)" src="/images/gow dr.webp">
+    </aside>
+    <script src="index.js"></script>
+</body>
+</html>
